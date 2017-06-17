@@ -34,7 +34,8 @@
     "rdf-serializer-ntriples": "git://github.com/rdf-ext/rdf-serializer-ntriples.git#develop",
     "shelljs": "^0.7.7",
     "sparql-http-client": "^1.0.2",
-    "through2": "^2.0.3"
+    "through2": "^2.0.3",
+    "yauzl": "^2.8.0"
   },
   "devDependencies": {
     "standard": "^10.0.2"

@@ -1,11 +1,13 @@
 module.exports = {
   byline: require('./lib/byline'),
+  concat: require('./lib/concat'),
   count: require('./lib/count'),
   csv: require('./lib/csv'),
   file: require('./lib/file'),
   filter: require('./lib/filter'),
   flatten: require('./lib/flatten'),
   glob: require('./lib/glob'),
+  gzip: require('./lib/gzip'),
   jsonld: require('./lib/jsonld'),
   limit: require('./lib/limit'),
   map: require('./lib/map'),
@@ -16,5 +18,6 @@ module.exports = {
   shell: require('shelljs'),
   stdout: require('./lib/stdout'),
   sparql: require('./lib/sparql'),
-  Promise: require('bluebird')
+  unzip: require('./lib/unzip'),
+  Promise: require('./lib/Promise')
 }
