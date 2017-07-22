@@ -29,6 +29,7 @@
     "multipipe": "^1.0.2",
     "node-fetch": "^1.7.0",
     "rdf-ext": "git://github.com/rdf-ext/rdf-ext.git#develop",
+    "rdf-parser-csvw": "git://github.com/rdf-ext/rdf-parser-csvw.git#develop",
     "rdf-parser-jsonld": "git://github.com/rdf-ext/rdf-parser-jsonld.git#develop",
     "rdf-parser-n3": "git://github.com/rdf-ext/rdf-parser-n3.git#develop",
     "rdf-serializer-ntriples": "git://github.com/rdf-ext/rdf-serializer-ntriples.git#develop",

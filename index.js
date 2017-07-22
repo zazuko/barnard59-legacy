@@ -3,6 +3,7 @@ module.exports = {
   concat: require('./lib/concat'),
   count: require('./lib/count'),
   csv: require('./lib/csv'),
+  csvw: require('./lib/csvw'),
   file: require('./lib/file'),
   filter: require('./lib/filter'),
   flatten: require('./lib/flatten'),
