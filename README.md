@@ -13,3 +13,7 @@ To allow processing of big amounts of data, it's based on [streams](https://node
 - JSON-LD
 - N-Triples
 - list functions (filter, map)
+
+## Usage
+
+Check the [examples](https://github.com/zazuko/barnard59/tree/master/example) for some ideas. More documentation on the usage of barnard59 will be added later.
