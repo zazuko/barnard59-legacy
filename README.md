@@ -31,7 +31,7 @@ var p = require('barnard59')
 * [barnard59](#module_barnard59)
     * [.shell](#module_barnard59.shell)
     * [.limit(limit)](#module_barnard59.limit)
-    * [.run(something)](#module_barnard59.run) ⇒ <code>pipe</code>
+    * [.run(something)](#module_barnard59.run) ⇒ <code>Promise</code>
     * [.stdout()](#module_barnard59.stdout)
 
 <a name="module_barnard59.shell"></a>
@@ -53,16 +53,20 @@ Limit the amount of chunks in a pipe.
 
 <a name="module_barnard59.run"></a>
 
-### p.run(something) ⇒ <code>pipe</code>
+### p.run(something) ⇒ <code>Promise</code>
 Run a pipe.
 
 **Kind**: static method of [<code>barnard59</code>](#module_barnard59)  
-**Returns**: <code>pipe</code> - something  
+**Returns**: <code>Promise</code> - something  
 
 | Param | Type |
 | --- | --- |
-| something | <code>pipe</code> | 
+| something | <code>Stream</code> | 
 
+**Example**  
+```js
+p.run(source.pipe(p.limit).pipe(p.stdout())).then(() => {console.log('done')})
+```
 <a name="module_barnard59.stdout"></a>
 
 ### p.stdout()
