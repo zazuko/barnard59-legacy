@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
+    "docs": "jsdoc2md -t README.hbs -f lib/*.js index.js > README.md; echo",
     "test": "npm run lint"
   },
   "repository": {
@@ -39,6 +40,7 @@
     "yauzl": "^2.8.0"
   },
   "devDependencies": {
+    "jsdoc-to-markdown": "^3.0.0",
     "standard": "^10.0.2"
   },
   "readmeFilename": "README.md"

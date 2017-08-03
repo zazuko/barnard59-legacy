@@ -1,3 +1,13 @@
+/**
+ * barnard59 Linked Data pipelines
+ * @module barnard59
+ * @typicalname p
+ * @example
+ * ```js
+ * var p = require('barnard59')
+ * ```
+ */
+
 module.exports = {
   byline: require('./lib/byline'),
   concat: require('./lib/concat'),
@@ -16,7 +26,16 @@ module.exports = {
   offset: require('./lib/offset'),
   rdf: require('rdf-ext'),
   run: require('./lib/run'),
+/**
+ * Execute a shell command.
+ * @memberof module:barnard59
+ */
   shell: require('shelljs'),
+/**
+ * Provides a pipe which writes on the stdout of the current operating system process.
+ * @method
+ * @memberof module:barnard59
+ */
   stdout: require('./lib/stdout'),
   sparql: require('./lib/sparql'),
   unzip: require('./lib/unzip'),
