@@ -4,9 +4,8 @@
   "description": "Linked Data pipelines",
   "main": "index.js",
   "scripts": {
-    "lint": "standard",
     "docs": "jsdoc2md -t README.hbs -f lib/*.js index.js > README.md; echo",
-    "test": "npm run lint"
+    "test": "standard && mocha"
   },
   "repository": {
     "type": "git",
@@ -35,6 +34,7 @@
     "rdf-parser-jsonld": "^1.0.1",
     "rdf-parser-n3": "^1.0.0",
     "rdf-serializer-ntriples": "^1.0.0",
+    "readable-stream": "^2.3.3",
     "shelljs": "^0.7.7",
     "sparql-http-client": "^1.0.2",
     "through2": "^2.0.3",
@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^3.0.0",
+    "mocha": "^4.0.1",
     "standard": "^10.0.2"
-  },
-  "readmeFilename": "README.md"
+  }
 }
