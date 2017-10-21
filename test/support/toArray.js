@@ -21,9 +21,12 @@ function toArray (stream, options) {
 
   stream.pipe(output)
 
-  return Promise.on(output, 'finish').then(() => {
-    return array
-  })
+  return Promise.race([
+    Promise.on(output, 'finish').then(() => {
+      return array
+    }),
+    Promise.on(stream, 'error').reject()
+  ])
 }
 
 module.exports = toArray
