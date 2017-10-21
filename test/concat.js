@@ -221,4 +221,70 @@ describe('concat', () => {
       })
     })
   })
+
+  describe('.map', () => {
+    it('should be a function', () => {
+      assert.equal(typeof concat.map, 'function')
+    })
+
+    it('should concat streams returned by the callback function', () => {
+      const streams = [
+        new Readable({
+          read: function () {
+            this.push('0')
+            this.push('1')
+            this.push(null)
+          }
+        }),
+        new Readable({
+          read: function () {
+            this.push('2')
+            this.push(null)
+          }
+        })
+      ]
+
+      const stream = concat.map(streams, (s) => {
+        return s
+      })
+
+      return toArray(stream, {decode: true}).then((result) => {
+        assert.deepEqual(result, ['0', '1', '2'])
+      })
+    })
+  })
+
+  describe('.map.object', () => {
+    it('should be a function', () => {
+      assert.equal(typeof concat.map, 'function')
+    })
+
+    it('should concat streams returned by the callback function in object mode', () => {
+      const streams = [
+        new Readable({
+          objectMode: true,
+          read: function () {
+            this.push('0')
+            this.push('1')
+            this.push(null)
+          }
+        }),
+        new Readable({
+          objectMode: true,
+          read: function () {
+            this.push('2')
+            this.push(null)
+          }
+        })
+      ]
+
+      const stream = concat.map.object(streams, (s) => {
+        return s
+      })
+
+      return toArray(stream).then((result) => {
+        assert.deepEqual(result, ['0', '1', '2'])
+      })
+    })
+  })
 })
