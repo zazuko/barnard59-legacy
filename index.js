@@ -31,6 +31,7 @@ module.exports = {
  * @memberof module:barnard59
  */
   shell: require('shelljs'),
+  speed: require('./lib/speed'),
 /**
  * Provides a pipe which writes on the stdout of the current operating system process.
  * @method
