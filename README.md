@@ -1,5 +1,9 @@
 # barnard59
 
+__NOTE__: This is the *legacy* version and should __not__ be used anymore. The sole reason for this repo are some old dependencies in pipelines that did not switch to the current version yet. Use [barnard59](https://github.com/zazuko/barnard59) instead. This repo will be deleted at one point.
+
+
+
 Build better Linked Data pipelines in less time with barnard59 to have more time to look at the [sky](https://en.wikipedia.org/wiki/Pipe_Nebula).
 barnard59 bundles a lot of tools with an easy to use API.
 To allow processing of big amounts of data, it's based on [streams](https://nodejs.org/api/stream.html).  
