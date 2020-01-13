@@ -30,7 +30,7 @@
     "node-fetch": "^1.7.0",
     "rdf-ext": "^1.0.0",
     "rdf-parser-csvw": "^0.13.0",
-    "rdf-parser-csvw-xlsx": "git://github.com/rdf-ext/rdf-parser-csvw-xlsx.git#csvw-dep",
+    "rdf-parser-csvw-xlsx": "git://github.com/rdf-ext/rdf-parser-csvw-xlsx.git#master",
     "rdf-parser-jsonld": "^1.0.1",
     "rdf-parser-n3": "^1.0.0",
     "rdf-serializer-ntriples": "^1.0.0",
