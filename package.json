@@ -27,7 +27,7 @@
     "glob": "^7.1.2",
     "json-stream": "^1.0.0",
     "multipipe": "^1.0.2",
-    "node-fetch": "^1.7.0",
+    "node-fetch": "^2.6.1",
     "rdf-ext": "^1.0.0",
     "rdf-parser-csvw": "^0.13.0",
     "rdf-parser-csvw-xlsx": "git://github.com/rdf-ext/rdf-parser-csvw-xlsx.git#master",
